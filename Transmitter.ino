@@ -1,7 +1,7 @@
 #include <RCSwitch.h>
 
 RCSwitch mySwitch = RCSwitch();
-int button = 4;
+int button = 4; //Sets button to pin digital pin 4. 
 void setup() 
 {
 
@@ -39,7 +39,7 @@ void loop()
   {
   
   mySwitch.send("111111111111111111111111"); //Sends message in binary 
-  delay(1000);  
+  delay(1000); //Delay to make sure the message has time to be sent fully
 
   }
    
